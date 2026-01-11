@@ -1,0 +1,93 @@
+############################
+# Go build outputs
+############################
+
+# Binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace / build cache
+/bin/
+/dist/
+/build/
+/tmp/
+
+# Go test coverage
+coverage.out
+*.coverprofile
+
+# Go benchmark
+*.bench
+
+############################
+# Go modules
+############################
+
+# Vendor (如果你不提交 vendor)
+vendor/
+
+# Go workspace file (Go 1.18+)
+go.work
+go.work.sum
+
+############################
+# Logs & runtime files
+############################
+
+*.log
+logs/
+*.pid
+
+############################
+# IDE / Editor
+############################
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# GoLand / IntelliJ
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+
+############################
+# OS generated
+############################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+############################
+# Env / secrets
+############################
+
+.env
+.env.*
+config.local.yaml
+config.local.json
+
+############################
+# Tools / temp
+############################
+
+*.tmp
+*.cache
