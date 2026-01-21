@@ -1,0 +1,35 @@
+基础命令详解
+
+# 创建新模块
+go mod init example.com/myproject
+
+# 在现有项目中初始化
+cd /path/to/project
+go mod init
+
+# 添加依赖（自动选择最新版本）
+go get github.com/gin-gonic/gin
+
+# 添加特定版本
+go get github.com/gin-gonic/gin@v1.9.1
+
+# 更新到最新版本
+go get -u github.com/gin-gonic/gin
+
+# 更新所有依赖
+go get -u all
+
+# 下载依赖到本地缓存
+go mod download
+
+# 整理 go.mod 文件
+go mod tidy
+
+# 查看所有依赖
+go list -m all
+
+# 查看特定依赖的可用版本
+go list -m -versions github.com/gin-gonic/gin
+
+# 查看为什么需要某个依赖
+go mod why github.com/gin-gonic/gin
