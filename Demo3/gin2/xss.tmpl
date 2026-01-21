@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+用户的评论是：{{.str1}}
+{{/*将html转义*/}}
+用户的评论是：{{.str2 | safe}}
+</body>
+</html>

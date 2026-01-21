@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<h1>测试嵌套template语法</h1>
+<hr>
+{{template "ul.tmpl"}}
+<hr>
+{{/*嵌套领一个末班*/}}
+{{template "ol.tmpl"}}
+{{define "ol.tmpl"}}
+    <ol>
+        <li>吃饭</li>
+        <li>睡觉</li>
+        <li>打豆豆</li>
+    </ol>
+{{end}}
+</body>
+</html>
